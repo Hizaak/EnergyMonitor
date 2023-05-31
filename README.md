@@ -7,7 +7,7 @@ docker : https://docs.docker.com/engine/install/ubuntu/ (Ubuntu) ou https://docs
 docker-compose (si jamais la dépendance n'est pas inclue dans docker, en fonction de l'installation)
 
 # Lancement du projet
-- Placez vous à la racine du projet et exécutez ``./dockerenv/exec.sh``. Cela mettra en place l'environnement (pull des images > lancement des images) \
+- Placez vous à la racine du projet et exécutez ``./dockerenv/exec.sh``. Cela mettra en place l'environnement (pull des images > lancement des images)
 - Lancez les mesures avec la commande ``./Metrics/metrics.sh``
 
 # Visualisation
