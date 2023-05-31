@@ -1,5 +1,5 @@
 # EnergyMonitor
-Le projet consiste à visualiser l'évolution en temps réel de la consommation énergétique de processus particuliers en temps réel.
+Visualiser l'évolution en temps réel de la consommation énergétique de processus spécifiques.
 
 # Dépendances
 Un ordinateur sous Linux (pour le script d'analyse des PID) \
