@@ -479,8 +479,9 @@ while true; do
             RAM=$(shuf -i 40-300 -n 1)
             SD=$(shuf -i 30-200 -n 1)
             NIC=$(shuf -i 0-10 -n 1)
+            TOTAL=$(($CPU+$RAM+$SD+$NIC))
 
-            QUERY="curl -s -XPOST 'http://$INFLUXDB_HOST:$INFLUXDB_PORT/write?db=$DATABASE' --data-binary '$MEASUREMENT user=\"$USER\",name=\"$NAME\",parent=\"$PARENT\",PID=$PID,CPU=$CPU,RAM=$RAM,SD=$SD,NIC=$NIC'"
+            QUERY="curl -s -XPOST 'http://$INFLUXDB_HOST:$INFLUXDB_PORT/write?db=$DATABASE' --data-binary '$MEASUREMENT user=\"$USER\",name=\"$NAME\",parent=\"$PARENT\",PID=$PID,TOTAL=$TOTAL,CPU=$CPU,RAM=$RAM,SD=$SD,NIC=$NIC'"
 
             eval $QUERY
         fi
