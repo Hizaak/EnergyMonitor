@@ -11,9 +11,6 @@ docker-compose (si jamais la dépendance n'est pas inclue dans docker, en foncti
 - Placez vous à la racine du projet et exécutez ``./dockerenv/exec.sh``. Cela mettra en place l'environnement (pull des images > lancement des images)
 - Lancez les mesures avec la commande ``./Metrics/metrics.sh``
 
-## Warning !!!!
-Pour l'instant ça mettra down tous les conteneurs que vous avez sur votre ordinateur, donc kaxu, commentez les deux lignes du programme qui suppriment tous les conteneurs... Oopsie.
-
 ## Réinitialiser le projet
 - Placez vous à la racine du projet et exécutez ``./dockerenv/exec.sh wal``. Le paramètre "wal" permet de supprimer la base de données InfluxDB.
 
